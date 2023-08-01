@@ -1,4 +1,4 @@
-# mobile-px-demo
+# mobile-px-demo  移动端 px 转 vw/vh demo
 
 ## Project setup
 ```
@@ -20,5 +20,3 @@ yarn build
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -1,28 +1,37 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="test-viewport">测试转换</div>
+    <van-tabs v-model="active">
+        <van-tab title="标签 1">内容 1</van-tab>
+        <van-tab title="标签 2">内容 2</van-tab>
+        <van-tab title="标签 3">内容 3</van-tab>
+        <van-tab title="标签 4">内容 4</van-tab>
+    </van-tabs>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  data() {
+    return {
+      active: 2
+    };
+  },
+    created() {
+        
+    }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+<style lang="less" scoped>
+.test-viewport {
+  width: 750px;
+  height: 100px;
+  font-size: 40px;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  line-height: 100px;
+  background: #13b5b1;
 }
 </style>
